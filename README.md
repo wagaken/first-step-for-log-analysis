@@ -1,7 +1,8 @@
 # First step for log analysis
 Here's all the code of my book "First step for log analysis".<br>
-They are writen in Python3<br>
-## table of content
+They are writen in Python3.<br>
+You can freely distribute these codes.<br>
+## table of contents
 1. combine_log.py<br>
 2. apache_parser.py 
 3. check_request.py
