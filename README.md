@@ -3,7 +3,7 @@ Here's all the code of my book "First step for log analysis".<br>
 They are writen in Python3.<br>
 You can freely distribute these codes.<br>
 ## Table of contents
-1. combine_log.py<br>
+1. combine_log.py
 2. apache_parser.py 
 3. check_request.py
 4. apache_parser_v2.py
@@ -14,7 +14,7 @@ You can freely distribute these codes.<br>
 9. xss.py
 10. csrf.py
 11. dos_attack.py
-12. dos_detail
+12. dos_detail.py
 ## About dataset
 Data hosted and ReadMe file provided by AZSecure Data and the University of Arizona Artificial Intelligence Lab. Citation information below.
 
