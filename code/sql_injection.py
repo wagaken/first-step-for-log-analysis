@@ -1,21 +1,10 @@
 def sql_injection(log, threshold):
     keywords = [
         "'", '&#039', '*', ';', '%20', '--',
-        'SELECT', 'select',
-        'DELETE', 'delete',
-        'CREATE', 'create',
-        'DROP', 'drop',
-        'ALTER', 'alter',
-        'INSERT', 'insert',
-        'UPDATE', 'update',
-        'SET', 'set',
-        'FROM', 'from',
-        'WHERE', 'where',
-        'UNION', 'union',
-        'ALL', 'all',
-        'LIKE', 'like',
-        'AND', 'and', '&',
-        'OR', 'or', '|',
+        'select', 'delete', 'create', 'drop', 'alter',
+        'insert', 'update', 'set', 'from', 'where',
+        'union', 'all', 'like', 
+        'and', '&', 'or', '|',
         'user', 'username', 'passwd', 'id', 'admin', 'information_schema'
      ]
     
@@ -23,7 +12,7 @@ def sql_injection(log, threshold):
     
     for i in range(len(log)):
         for j in range(len(keywords)):
-            if keywords[j] in log[i]['request_url']:
+            if keywords[j] in log[i]['request_url'].lower():
                 command_in_line[i] += 1
     
     sql_log = {}
