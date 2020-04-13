@@ -14,10 +14,10 @@ def os_command_injection(log, threshold):
     
     for i in range(len(log)):
         for j in range(len(keywords)):
-            if keywords[j] in log[i]['request_url']:
+            if keywords[j] in log[i]['request_url'].lower():
                 command_in_line[i] += 1
                 
-        if '\\' in repr(log[i]['request_url']):
+        if '\\' in repr(log[i]['request_url'].lower()):
                 command_in_line[i] += 1
     
     sql_log = {}
