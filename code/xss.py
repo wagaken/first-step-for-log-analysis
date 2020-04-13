@@ -1,21 +1,21 @@
 def xss(log):
     keywords = [
-        'script>', 'SCRIPT>','script&gt;', 'SCRIPT&gt;'
-        '<img', '<IMG','&lt;img', '&lt;IMG',
-        '<div', '<DIV','&lt;div', '&lt;DIV',
-        '<iframe', '<IFRAME', '&lt;iframe', '&lt;IFRAME',
-        '<object', '<OBJECT','&lt;object', '&lt;OBJECT',
-        '<a', '<A', '&lt;a', '&lt;A',
-        '<style', '<STYLE','&lt;style', '&lt;STYLE',
-        '<link', '<LINK', '&lt;link', '&lt;LINK',
-        '<body', '<BODY','&lt;body', '&lt;BODY',
+        'script>', 'script&gt;',
+        '<img', '&lt;img',
+        '<div', '&lt;div',
+        '<iframe', '&lt;iframe', 
+        '<object', '&lt;object',
+        '<a', '&lt;a',
+        '<style', '&lt;style',
+        '<link', '&lt;link',
+        '<body', '&lt;body'
      ]
     
     keywords_in_line = [0 for i in range(len(log))]
     
     for i in range(len(log)):
         for j in range(len(keywords)):
-            if keywords[j] in log[i]['request_url']:
+            if keywords[j] in log[i]['request_url'].lower():
                 keywords_in_line[i] += 1
     
     xss_log = {}
