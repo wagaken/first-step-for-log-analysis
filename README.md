@@ -1,10 +1,10 @@
-# First step for log analysis
+# ログ分析ことはじめ: セキュリティのためのApacheログ分析
 「ログ分析ことはじめ: セキュリティのためのApacheログ分析」のレポジトリです。<br>
 https://www.amazon.co.jp/%E3%83%AD%E3%82%B0%E5%88%86%E6%9E%90-%E3%81%93%E3%81%A8%E3%81%AF%E3%81%98%E3%82%81-%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEApache%E3%83%AD%E3%82%B0%E5%88%86%E6%9E%90-%E6%88%91%E7%94%B0-%E5%81%A5%E4%BB%8B-ebook/dp/B0871YGBXW<br>
 これらのコードはPython3で書かれています。<br>
 コードの可変や共有など、ご自由にお使いください。<br>
 
-## Table of contents
+## コンテンツ
 1. combine_log.py
 2. apache_parser.py 
 3. check_request.py
@@ -17,7 +17,8 @@ https://www.amazon.co.jp/%E3%83%AD%E3%82%B0%E5%88%86%E6%9E%90-%E3%81%93%E3%81%A8
 10. csrf.py
 11. dos_attack.py
 12. dos_detail.py
-## About dataset
+
+## データセットについて
 Data hosted and ReadMe file provided by AZSecure Data and the University of Arizona Artificial Intelligence Lab. Citation information below.
 
 file contains:
